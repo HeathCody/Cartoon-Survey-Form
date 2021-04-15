@@ -1,1 +1,56 @@
 <title>Survey Form</title>
+<link href="surveyform.css"type="text/css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+<head>
+    <h1 id="title">Kartun Masa Kecil Survey Form</h1>
+    <p id="description">What is your favourite cartoon?</p>
+</head>
+<body>
+    <div>
+        <form id="survey-form">
+            <label for="name" id="name-label">
+                Name
+                <input type="text" id="name" placeholder="Input your name" required>
+            </label>
+            <label for="email" id="email-label">
+                Email
+                <input type="email" id="email" placeholder="Fill your e-mail" required>
+            </label>
+            <label for="number" id="number-label">
+                Age
+                <input type="number" id="number" placeholder="How old are you" min="13" max="30" required>
+            </label>
+            <label for="dropdown" id="dropdown-label">
+                Favourite Cartoon
+                <select id="dropdown">
+                    <option>Spongebob Squarepants</option>
+                    <option>Dora the Explorer</option>
+                    <option>Chalkzone</option>
+                    <option>Ninja Hatori</option>
+                    <option>Doraemon</option>
+                    <option>Dragon Ball</option>
+                </select>
+            </label><br><br>
+            <label for="radio" id="radio-label">How do you know about cartoons?</label><br>
+                <input type="radio" name=radio value="tv" checked>TV<br>
+                <input type="radio" name=radio value="comic">Comic<br>
+                <input type="radio" name=radio value="friends">Friends<br>
+                <input type="radio" name=radio value="merchandise">Merchandise<br>
+                <input type="radio" name=radio value="handphone">Handphone<br><br>
+            <label for="checkbox" id="genre-label">What genres do you like?</label><br>
+                <input type="checkbox" value="Adventure">Adventure<br>
+                <input type="checkbox" value="Comedy">Comedy<br>
+                <input type="checkbox" value="Horror">Horror<br>
+                <input type="checkbox" value="Drama">Drama<br>
+                <input type="checkbox" value="Superhero">Superhero<br>
+                <input type="checkbox" value="Slice of life">Slice of life<br><br>
+            <label for="comment" id="textarea">Comment for next generation about cartoons</label>
+                <textarea cols="30" rows="10" placeholder="Comment here"></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
